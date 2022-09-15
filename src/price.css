@@ -1,0 +1,146 @@
+.price-section {
+  margin-top: 4rem;
+  padding: 5rem;
+}
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+.pricing {
+  text-align: center;
+  padding: 2rem 4rem;
+  width: 30rem;
+  height: 35rem;
+  border-radius: 11px;
+}
+.pricing-bg {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan {
+  border: 3px solid #fdf2e9;
+  justify-self: end;
+}
+.pricing-bg::after {
+  content: "BEST VALUE";
+  position: absolute;
+  padding: 0.5rem 5rem;
+  background-color: #ae5d16;
+  top: 25px;
+  right: -40px;
+  transform: rotateZ(45deg);
+  font-weight: 700;
+  color: white;
+}
+.price-heading {
+  color: #cf711f;
+  margin-bottom: 2rem;
+}
+.price-summary {
+  font-size: 3rem;
+  color: rgb(5, 5, 5);
+  line-height: 1.2;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+.price-category {
+  font-size: 2rem;
+}
+.price-dollars {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.price-dollars span {
+  font-size: 1.8rem;
+}
+.price-month {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+.pricing ul li {
+  text-align: left;
+}
+.pricing ul {
+  margin-bottom: 3rem;
+}
+.pricing ul li span {
+  color: #cf711f;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.day {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #888888;
+}
+.orders {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #888888;
+}
+.delivery {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #888888;
+}
+.access {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #888888;
+}
+.price-btn {
+  padding: 1rem 2rem;
+  background-color: #cf711f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 800;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.price-btn:hover {
+  background-color: #ae5d16;
+}
+.both-plans {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  color: #888888;
+}
+
+@media (max-width: 75rem) {
+  .price-section {
+    margin-top: 3rem;
+    padding: 4rem;
+  }
+}
+@media(max-width:49em){
+  .pricing-bg::after {
+    top: 20px;
+    right: -25px;
+  }
+}
+@media(max-width:29em){
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+  .pricing {
+    justify-self: center;
+    padding: 4rem;
+  }
+  .pricing-bg::after {
+    top: 20px;
+    right: -25px;
+  }
+}
